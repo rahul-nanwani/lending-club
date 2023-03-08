@@ -20,7 +20,7 @@ When a loan application is received, the company must make a loan approval decis
 
 The loan dataset contains information about previous loan applicants and whether they 'defaulted' or not. The goal is to identify patterns that indicate whether a person is likely to default, which can then be used to take actions such as denying the loan, reducing the loan amount, lending (to risky applicants) at a higher interest rate, and so on.
 
-<img src="https://cdn.upgrad.com/UpGrad/temp/7afbce98-8ecc-41c6-96d8-981cba7d343f/Loan_image.png" alt="Loan Dataset Image" width="50%">
+<img src="images/loan_dataset.png" alt="Loan Dataset Image" width="50%">
 
 When a person applies for a loan, the company may make one of two decisions:
 
@@ -45,17 +45,20 @@ Python 3.8.10
 | matplotlib | 3.5.3 |
 | numpy | 1.22.4 |
 | pandas | 1.3.5 |
-| plotly | 5.5.0 |
 | seaborn | 0.11.2 |
 
 ---
 
 ## Conclusions
 
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- Term has the most impact on default rate, loan term being 60 months are 2.5x more likely to default than 36 months. 
+- Loan Grades A through G shows a pattern of increased risk. 
+- Employment Length does not show much impact on default rates. 
+- Verification Status being source verified and verified slightly increases the default rate.
+- Home ownerships being stated mortgaged, owned or rented, very slightly increases the default risk in the order. Mortgaged being the least. 
+- Higher the interest rate, higher is the risk of default.
+- Higher annual income may very slightly reduce the risk of defaulting the loan.
+- As DTI(Debt-To-Income) ratio increases, the risk of default increases as well.
 
 ---
 
